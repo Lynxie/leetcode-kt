@@ -1,9 +1,16 @@
-import solutions.LongestCommonPrefix
+import solutions.PhoneLetterCombinations
+import kotlin.system.measureTimeMillis
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     println(
-        LongestCommonPrefix().longestCommonPrefix(arrayOf("flower", "flow", "flight"))
+        measureTimeMillis {
+            PhoneLetterCombinations().letterCombinations1("23436456")
+        }
+    )
+
+    println(
+        measureTimeMillis {
+            PhoneLetterCombinations().letterCombinations2("23436456")
+        }
     )
 }
