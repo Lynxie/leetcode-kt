@@ -1,20 +1,9 @@
-import solutions.ListNode
-import solutions.MergeTwoSortedLists
+import solutions.RemoveDuplicatesFromArray
 
 
 fun main() {
-    val listNode1 = ListNode(1)
-    listNode1.next = ListNode(2)
-    listNode1.next!!.next = ListNode(4)
-
-    val listNode2 = ListNode(1)
-    listNode2.next = ListNode(3)
-    listNode2.next!!.next = ListNode(4)
-
-
-    val res = MergeTwoSortedLists().mergeTwoLists(listNode1, listNode2)
-    println("asd")
-    println(
-        res
-    )
+    val intarr = intArrayOf(1, 1, 1, 1, 2, 2)
+    val res = RemoveDuplicatesFromArray().removeDuplicates(intarr)
+    println(res)
+    println(intarr.contentToString())
 }
