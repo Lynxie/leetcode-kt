@@ -15,8 +15,8 @@ fun main() {
     SearchInsertPosition().searchInsert(intarr, 56111)
     SearchInsertPosition().searchInsert2(intarr, 56111)
 
-    println(measureTimeMillis { SearchInsertPosition().searchInsert(intarr, 96111111) })
-    println(measureTimeMillis { SearchInsertPosition().searchInsert(intarr, 96111111) })
-    println(measureTimeMillis { SearchInsertPosition().searchInsert2(intarr, 96111111) })
-    println(measureTimeMillis { SearchInsertPosition().searchInsert2(intarr, 96111111) })
+    println(measureTimeMillis { repeat(100) { SearchInsertPosition().searchInsert(intarr, 96111111) }})
+    println(measureTimeMillis { repeat(100) { SearchInsertPosition().searchInsert(intarr, 96111111) }})
+    println(measureTimeMillis { repeat(100) { SearchInsertPosition().searchInsert2(intarr, 96111111) }})
+    println(measureTimeMillis { repeat(100) { SearchInsertPosition().searchInsert2(intarr, 96111111) }})
 }
