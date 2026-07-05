@@ -2,7 +2,7 @@ package solutions
 
 class IntegerToRoman {
 
-    val map = mapOf(
+    val map = arrayOf(
         1000 to "M",
         900 to "CM",
         500 to "D",
@@ -19,6 +19,20 @@ class IntegerToRoman {
     )
 
     fun intToRoman(num: Int): String {
+        var result = ""
+        var numCopy = num
+
+        for ((int, romanChar) in map) {
+            while (int <= numCopy) {
+                numCopy -= int
+                result += romanChar
+            }
+        }
+
+        return result
+    }
+
+    fun intToRoman2(num: Int): String {
         var result = ""
         var numCopy = num
 
