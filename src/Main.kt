@@ -1,7 +1,7 @@
-import solutions.ClimbingStairs
+import solutions.IntegerToRoman
 
 fun main() {
 
-    println(ClimbingStairs().climbStairs(10))
+    println(IntegerToRoman().intToRoman(3749))
 
 }
