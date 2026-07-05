@@ -1,3 +1,4 @@
+import solutions.AddBinary
 import solutions.LargeIntegerPlusOne
 import solutions.LengthOfLastWord
 import solutions.RemoveDuplicatesFromArray
@@ -9,5 +10,5 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
 
-    println(LargeIntegerPlusOne().plusOne(intArrayOf(9,9,9,9,9)).contentToString())
+    println(AddBinary().addBinary("11", "1"))
 }
