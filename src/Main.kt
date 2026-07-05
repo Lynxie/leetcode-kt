@@ -1,3 +1,4 @@
+import solutions.LargeIntegerPlusOne
 import solutions.LengthOfLastWord
 import solutions.RemoveDuplicatesFromArray
 import solutions.RemoveElement
@@ -8,5 +9,5 @@ import kotlin.system.measureTimeMillis
 
 fun main() {
 
-    println(LengthOfLastWord().lengthOfLastWord("Hello World12"))
+    println(LargeIntegerPlusOne().plusOne(intArrayOf(9,9,9,9,9)).contentToString())
 }
