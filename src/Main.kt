@@ -4,11 +4,12 @@ import solutions.LengthOfLastWord
 import solutions.RemoveDuplicatesFromArray
 import solutions.RemoveElement
 import solutions.SearchInsertPosition
+import solutions.SqrtX
 import kotlin.system.measureNanoTime
 import kotlin.system.measureTimeMillis
 
 
 fun main() {
 
-    println(AddBinary().addBinary("11", "1"))
+    println(SqrtX().mySqrt(120000))
 }
