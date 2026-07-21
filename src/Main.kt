@@ -1,11 +1,12 @@
-import solutions.FourSum
-import solutions.ThreeSum
-import solutions.ThreeSumClosest
+import solutions.RemoveNodeFromList
 
 fun main() {
 
-//    println(FourSum().fourSum(intArrayOf(1,0,-1,0,-2,2), 0))
-//    println(FourSum().fourSum(intArrayOf(-2,-1,-1,1,1,2,2), 0))
-    println(FourSum().fourSum(intArrayOf(-3,-1,0,2,4,5), 2))
+    val head = RemoveNodeFromList.ListNode(1)
+    for (i in 2..6) {
+        head.next = RemoveNodeFromList.ListNode(i)
+    }
+
+    println(RemoveNodeFromList().removeNthFromEnd(head, 2))
 
 }
