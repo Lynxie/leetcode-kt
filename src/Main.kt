@@ -1,14 +1,10 @@
-import solutions.SwapNodesInPairs
+import solutions.NextPermutation
 
 fun main() {
 
-    val head = SwapNodesInPairs.ListNode(1)
-    var n = head
-    for (i in 2..5) {
-        n.next = SwapNodesInPairs.ListNode(i)
-        n = n.next!!
-    }
-
-    println(SwapNodesInPairs().swapPairs(head))
+//    println(NextPermutation().nextPermutation(intArrayOf(5, 4, 3, 2, 1)))
+//    println(NextPermutation().nextPermutation(intArrayOf(1, 2, 3, 4, 5)))
+//    println(NextPermutation().nextPermutation(intArrayOf(5, 4, 2, 3, 1)))
+    println(NextPermutation().nextPermutation(intArrayOf(2,3,1,3,3)))
 
 }
